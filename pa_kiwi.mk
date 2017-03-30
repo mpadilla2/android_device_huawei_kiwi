@@ -12,12 +12,27 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Check for target product
+ifeq (pa_kiwi,$(TARGET_PRODUCT))
+
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+
+# Include ParanoidAndroid common configuration
+TARGET_BOOT_ANIMATION_RES := 1080
+
+include device/qcom/common/common.mk
+
+# Inherit AOSP device configuration
 $(call inherit-product, device/huawei/kiwi/full_kiwi.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+include vendor/pa/main.mk
 
-PRODUCT_NAME := lineage_kiwi
+# Override AOSP build properties
+PRODUCT_NAME := pa_kiwi
 BOARD_VENDOR := huawei
 
 PRODUCT_GMS_CLIENTID_BASE := android-huawei
+
+endif
