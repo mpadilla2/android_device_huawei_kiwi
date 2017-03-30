@@ -141,3 +141,7 @@ ro.sys.sdcardfs=true
 
 # WiFi
 wifi.interface=wlan0
+
+# Specific device info (Bliss building)
+ro.product.model=HUAWEI
+ro.product.device=kiwi
