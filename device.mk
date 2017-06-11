@@ -113,10 +113,6 @@ PRODUCT_PACKAGES += \
     libtinyxml \
     memtrack.msm8916
 
-# Doze
-PRODUCT_PACKAGES += \
-   KiwiDoze
-
 # Filesystem
 PRODUCT_PACKAGES += \
     e2fsck \
@@ -126,10 +122,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fingerprint.msm8916 \
     fingerprintd
-
-# FlipFlap
-PRODUCT_PACKAGES += \
-    FlipFlap
 
 # FM
 PRODUCT_PACKAGES += \
