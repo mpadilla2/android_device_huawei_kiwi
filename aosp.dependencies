@@ -1,26 +1,26 @@
 [
   {
-    "repository": "android_device_qcom_common",
-    "target_path": "device/qcom/common"
+    "remote":       "github",
+    "repository": "lineageos/android_kernel_huawei_kiwi",
+    "target_path": "kernel/huawei/kiwi",
+    "branch":      "lineage-15.0"
   },
   {
-    "repository": "android_external_sony_boringssl-compat",
-    "target_path": "external/sony/boringssl-compat"
+    "remote":       "github",
+    "repository": "TheMuppets/proprietary_vendor_huawei",
+    "target_path": "vendor/huawei",
+    "branch":      "lineage-15.0"
   },
   {
-    "repository": "android_external_stlport",
-    "target_path": "external/stlport"
+    "remote":       "github",
+    "repository": "lineageos/android_external_sony_boringssl-compat",
+    "target_path": "external/sony/boringssl-compat",
+    "branch":      "lineage-15.0"
   },
   {
-    "repository": "android_kernel_huawei_kiwi",
-    "target_path": "kernel/huawei/kiwi"
-  },
-  {
-    "repository": "android_packages_resources_devicesettings",
-    "target_path": "packages/resources/devicesettings"
-  },
-  {
-    "repository": "android_packages_apps_FlipFlap",
-    "target_path": "packages/apps/FlipFlap"
+    "remote":       "github",
+    "repository": "lineageos/android_packages_resources_devicesettings",
+    "target_path": "packages/resources/devicesettings",
+    "branch":      "lineage-15.0"
   }
 ]
