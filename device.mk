@@ -91,7 +91,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     camera.msm8916 \
     libmm-qcamera \
-    Snap
+    SnapdragonCamera
 
 # Compatibility
 PRODUCT_PACKAGES += \
@@ -126,10 +126,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fingerprint.msm8916 \
     fingerprintd
-
-# FlipFlap
-PRODUCT_PACKAGES += \
-    FlipFlap
 
 # FM
 PRODUCT_PACKAGES += \
