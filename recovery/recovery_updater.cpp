@@ -27,6 +27,7 @@
 
 #include "edify/expr.h"
 #include "install.h"
+#include "updater/include/updater/install.h"
 
 #define MAX(a, b) (((a) > (b)) ? (a) : (b))
 
