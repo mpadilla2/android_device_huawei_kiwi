@@ -28,6 +28,7 @@
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
 #include <sys/_system_properties.h>
 #include <android-base/properties.h>
+#include <android-base/logging.h>
 
 #include <iostream>
 #include <fstream>
@@ -35,7 +36,6 @@
 
 #include "vendor_init.h"
 #include "property_service.h"
-#include "log.h"
 #include "util.h"
 
 using namespace std;
@@ -201,8 +201,8 @@ void vendor_load_properties()
     }
 
     if (!match) {
-        WARNING("Unknown variant: %s", model.c_str());
-        return;
+       LOG(WARNING) << "Unknown variant: %s" << model.c_str();
+       return;
     }
 
     property_set("ro.build.product", "kiwi");
